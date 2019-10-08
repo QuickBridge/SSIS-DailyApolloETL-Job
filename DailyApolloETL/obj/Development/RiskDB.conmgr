@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="RiskDB"
+  DTS:DTSID="{C3F7BCC1-BF93-4B59-948E-9B4227A3D584}"
+  DTS:CreationName="ADO.NET:SQL">
+  <DTS:PropertyExpression
+    DTS:Name="ServerName">@[$Project::DBServerName_RiskDB]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=BLGDEV1;Initial Catalog=RiskDB;Integrated Security=True;Connect Timeout=30;Application Name=SSIS-{C3F7BCC1-BF93-4B59-948E-9B4227A3D584}RiskDB;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
